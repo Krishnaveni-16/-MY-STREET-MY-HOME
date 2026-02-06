@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> MY STREET MY HOME +</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>HOMELY+</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#raise">Raise Issue</a></li>
+        <li><a href="#track">Track</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#rewards">Rewards</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Building Cleaner Communities Together</h1>
+    <p>Report, track, and resolve maintenance issues with ease</p>
+    <button onclick="scrollToSection('raise')">Raise an Issue</button>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1597764699513-9cdbd38f1f9c">
+        <h3>Easy Reporting</h3>
+        <p>Upload photos and describe issues instantly.</p>
+    </div>
+
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+        <h3>Real-Time Tracking</h3>
+        <p>Track issue status from report to resolution.</p>
+    </div>
+
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1">
+        <h3>Volunteer Support</h3>
+        <p>Join hands with community volunteers.</p>
+    </div>
+</section>
+
+<!-- RAISE ISSUE -->
+<section id="raise" class="container glass">
+    <h2>Raise a Maintenance Issue</h2>
+    <form id="issueForm">
+        <label>Upload Photo</label>
+        <input type="file">
+
+        <label>Description</label>
+        <textarea placeholder="Describe the issue clearly"></textarea>
+
+        <label>Category</label>
+        <select>
+            <option>Road Repair</option>
+            <option>Garbage Collection</option>
+            <option>Street Light</option>
+            <option>Water Leakage</option>
+        </select>
+
+        <label>Priority</label>
+        <select>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <label>Location</label>
+        <input type="text" placeholder="Auto detected location">
+
+        <button type="submit">Submit Issue</button>
+    </form>
+</section>
+
+<!-- TRACK -->
+<section id="track" class="container glass">
+    <h2>Track Issue Status</h2>
+    <p><strong>Issue:</strong> Garbage near public park</p>
+    <div class="status-bar">
+        <span class="active">Reported</span>
+        <span>In Progress</span>
+        <span>Resolved</span>
+    </div>
+    <p id="statusText">Current Status: Reported</p>
+</section>
+
+<!-- WHY US -->
+<section class="container glass">
+    <h2>Why FixMyStreet+?</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+            <h4>Community First</h4>
+            <p>Empowering citizens to take responsibility.</p>
+        </div>
+        <div class="info-card">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+            <h4>Transparency</h4>
+            <p>Every issue is tracked openly.</p>
+        </div>
+        <div class="info-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <h4>Fast Resolution</h4>
+            <p>Authorities respond efficiently.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section id="volunteer" class="container glass">
+    <h2>Volunteer Events</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da">
+            <h4>Street Cleanup</h4>
+            <p>Sunday 9 AM</p>
+            <button>Join</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+            <h4>Park Maintenance</h4>
+            <p>Saturday 8 AM</p>
+            <button>Join</button>
+        </div>
+    </div>
+</section>
+
+<!-- REWARDS -->
+<section id="rewards" class="container glass">
+    <h2>Rewards & Recognition</h2>
+    <ul class="rewards">
+        <li>⭐ 50 Points – Issue Reported</li>
+        <li>🏅 Community Hero Badge</li>
+        <li>🥇 Top Volunteer of the Month</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 FixMyStreet+ | Community Maintenance Solution</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
